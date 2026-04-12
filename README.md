@@ -1,2 +1,2 @@
 # crafting-interpreters
-Two implementations of LUX, following along with the crafting interpreters book.
+Two implementations of LOX, following along with the crafting interpreters book.

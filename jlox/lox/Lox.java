@@ -1,4 +1,4 @@
-package com.craftinginterpreters.lox;
+package lox;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,6 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
-import java.util.Scanner;
 
 // In Java, the `static` keyword is used to indicate that a variable or method belongs to the class
 // itself rather than to instances of the class. This means that static members are shared among
@@ -63,7 +62,7 @@ public class Lox {
   }
 
   private static void report(int line, String where, String message) {
-    System.error.println("[line " + line + "] Error " + where + ": " + message);
+    System.err.println("[line " + line + "] Error " + where + ": " + message);
     hadError = true;
   }
 }
